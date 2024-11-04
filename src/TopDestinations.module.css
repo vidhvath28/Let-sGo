@@ -1,0 +1,89 @@
+.topDestinations {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .sectionDescription {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .destinationGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .destinationCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  
+  .destinationCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .destinationImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .destinationInfo {
+    padding: 15px;
+  }
+  
+  .destinationName {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .ratingImage {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+  }
+  
+  .arrowIcon {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .destinationCard:hover .arrowIcon {
+    transform: translateX(5px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .sectionTitle {
+      font-size: 2rem;
+    }
+    
+    .sectionDescription {
+      font-size: 1rem;
+    }
+    
+    .ratingImage {
+      width: 60px;
+    }
+  }
+  

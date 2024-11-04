@@ -1,0 +1,142 @@
+/* HeroSection.module.css */
+
+.heroSection {
+    background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/your-background-image-url'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .exploreTag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .exploreIcon {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .heroTitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .heroDescription {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .searchForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .formTabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .formTabs button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formTabs button.activeTab {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  .formTabs button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .formFields {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .formField {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .fieldLabel {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .fieldInput {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .fieldIcon {
+    width: 20px;
+    padding: 10px;
+  }
+  
+  .fieldInput input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .dropdownIcon {
+    width: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .searchButton {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .searchButton:hover {
+    background-color: #e5533b;
+  }
+  
+  .searchIcon {
+    width: 20px;
+    margin-right: 8px;
+  }
+  

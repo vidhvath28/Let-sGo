@@ -1,0 +1,77 @@
+.travelApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app covers the full viewport height */
+  font-family: Arial, sans-serif; /* Set a consistent font across the app */
+  color: #333; /* Default text color */
+  background-color: #f0f0f0; /* Light background for the app */
+}
+
+main {
+  flex: 1; /* Allows the main content to grow and fill the available space */
+  padding: 20px; /* Add padding around the main content */
+}
+
+h1, h2, h3 {
+  margin: 0; /* Reset margins for headings */
+}
+
+header {
+  background-color: #007bff; /* Header background color */
+  color: white; /* Header text color */
+  padding: 15px 20px; /* Header padding */
+  text-align: center; /* Center text in the header */
+}
+
+.heroSection {
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/dff5ccbb4fc64bc989a27a4c48c90c6a155b322f70e0e4d89dbd9c9c5c8375e0?placeholderIfAbsent=true&apiKey=b412b21fb2e94c75aa55edbd24569de4'); /* Hero section background */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  height: 400px; /* Fixed height for the hero section */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  color: white; /* White text for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
+}
+
+.heroTitle {
+  font-size: 3rem; /* Larger font size for the hero title */
+}
+
+.heroSubtitle {
+  font-size: 1.5rem; /* Smaller font size for the subtitle */
+  margin-top: 10px; /* Spacing above subtitle */
+}
+
+.featuredTours {
+  background-color: #fff; /* White background for featured tours */
+  padding: 40px 20px; /* Padding for featured tours section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .featuredTours {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem; /* Further reduce font size for mobile */
+  }
+
+  .heroSubtitle {
+    font-size: 1rem; /* Further reduce subtitle size for mobile */
+  }
+}
